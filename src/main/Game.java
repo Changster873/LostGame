@@ -7,7 +7,6 @@ public class Game {
 
     public Game () {
         player = new Player("Scott", null);
-        new Weapon(WeaponType.Stick);
     }
 
     public static void main (String[] args) {

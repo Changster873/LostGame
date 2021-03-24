@@ -24,4 +24,27 @@ of the game to proceed playing with. Each Talent has two properties:
 - weakAgainst : CombatType = which Talent this is weak against
 - strongAgainst : CombatType = which Talent this is strong against
 
-### Weapon : Model
+### Physical, Telekinetic, Elemental : ***implements*** Talent
+These are the types of talents that exist in the game. They come
+with their own strengths and weaknesses (see onboarding doc for
+rules).
+- combatType: CombatType = to know what AttackRange and TalentType
+this Talent is
+  
+### AttackRange : Enum
+Range of the attack.
+- SHORT
+- LONG
+
+### TalentType : Enum
+Talent has 3 types.
+- Physical
+- Telekinetic
+- Elemental
+
+### CombatType : Model
+CombatType is a model that holds info on both AttackRange and TalentType.
+Best used to be assigned to Weapons that are able to be picked up by
+the player.
+- attackRange: AttackRange = short or long
+- talentType: TalentType = which of the 3 talents this is
