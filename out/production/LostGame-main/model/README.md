@@ -48,5 +48,3 @@ Best used to be assigned to Weapons that are able to be picked up by
 the player.
 - attackRange: AttackRange = short or long
 - talentType: TalentType = which of the 3 talents this is
-
-### Weapon : Model
